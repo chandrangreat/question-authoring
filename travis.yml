@@ -1,7 +1,7 @@
 language: node_js
 sudo: false
+before_install: npm install bower
 install: 
   npm install
-  npm install bower
 deploy:
   skip_cleanup: true
