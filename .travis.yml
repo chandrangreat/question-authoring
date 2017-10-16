@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- stable
+before_script:
+- sudo npm install -g bower
+- npm install request --save
+- ./install-dependencies.js
+install:
+- bower install
+deploy:
+  provider: heroku
+  api_key:
+    secure: c0dDwMU3+eHroW1mTgmt6NtbR3jLdQHMhlopab7P9c562yzViFpV2DK8HnaJv0rck39zc34HDl7cyg1oHBOAXYkVtBmrGsbxCMK5suXr7NvwRhmDb6dMGG08prgTxtoMg9qLa7/mo3TOIkc1thkfkU2tRTRoSGiogJA3SNrfvb6VzFHBDWwFnmUJ+P9FsNFnPXk9VMZheOR+tTn14x9EJyP48GzCjS0DkrxiiaaWuMNGtZ5oSWiKOMXjJiNVaPlw6gduK3E/JOnFE1NvpIXKmZCP2I9CfoxtLqHoDPFwhWu/oQBHDDnr+r/vjXw/SuRIbdX3WgO1WqDQVntc7enc+yt7sC7kww+EV9bJJEQ3eJr+J2ov7JAlWzVTuHAtaIjzE2O3TmcqnaCBifCac/WYrvSvG96BUfQUw2EMrXHA4x49X5/h1dzihoBcLLnoWQI1xcZaWz7ktHi0UDX36E9TO3QScspMYPCH9dOm3V5UXr7ry+1NpnecCHqvRjzKBRMqvgzfxrYwmlUJo5p6b49eFjZeh3nWi4edH/nFIuBmUjyVxlpng5+B1qFkKbQud2KbG0NxSh8JugUlHaKNeHoo4H/Q2BHM18TwYCNz4QuidZBWlA5xslLIl/HcNx8cLBcLpDJYXEFXImgx4bSdXapPGtB/3RZ6Ikli4xHSpXMbrLU=
