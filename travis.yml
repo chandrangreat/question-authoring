@@ -1,6 +1,6 @@
 language: node_js
 before_install: 
-  npm install bower
+  npm install -g bower
 install: 
   npm install
 deploy:
