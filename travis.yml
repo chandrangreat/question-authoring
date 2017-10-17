@@ -3,5 +3,3 @@ before_install:
   "npm install -g bower"
 install: 
   "npm install"
-deploy:
-  skip_cleanup: true
