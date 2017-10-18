@@ -1,6 +1,6 @@
-before_script: 
+before_install: 
   - npm install -g bower
   - bower install
 install:
-  - npm install
+  - npm install bower
 language: node_js
